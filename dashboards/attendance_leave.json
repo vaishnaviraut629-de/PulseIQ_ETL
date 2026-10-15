@@ -1,0 +1,117 @@
+{
+  "title": "Attendance & Leave Dashboard",
+  "filters": [
+    "month",
+    "department",
+    "weekday"
+  ],
+  "kpis": {
+    "monthly_trend": [
+      {
+        "year_month": "2025-04",
+        "total_days": 1024,
+        "rolling_3m": NaN
+      },
+      {
+        "year_month": "2025-05",
+        "total_days": 1018,
+        "rolling_3m": NaN
+      },
+      {
+        "year_month": "2025-06",
+        "total_days": 1019,
+        "rolling_3m": 1020.3333333333334
+      },
+      {
+        "year_month": "2025-07",
+        "total_days": 1017,
+        "rolling_3m": 1018.0
+      },
+      {
+        "year_month": "2025-08",
+        "total_days": 1025,
+        "rolling_3m": 1020.3333333333334
+      },
+      {
+        "year_month": "2025-09",
+        "total_days": 1022,
+        "rolling_3m": 1021.3333333333334
+      },
+      {
+        "year_month": "2025-10",
+        "total_days": 1031,
+        "rolling_3m": 1026.0
+      },
+      {
+        "year_month": "2025-11",
+        "total_days": 1025,
+        "rolling_3m": 1026.0
+      },
+      {
+        "year_month": "2025-12",
+        "total_days": 1029,
+        "rolling_3m": 1028.3333333333333
+      },
+      {
+        "year_month": "2026-01",
+        "total_days": 1027,
+        "rolling_3m": 1027.0
+      },
+      {
+        "year_month": "2026-02",
+        "total_days": 1038,
+        "rolling_3m": 1031.3333333333333
+      },
+      {
+        "year_month": "2026-03",
+        "total_days": 1039,
+        "rolling_3m": 1034.6666666666667
+      },
+      {
+        "year_month": "2026-04",
+        "total_days": 1031,
+        "rolling_3m": 1036.0
+      },
+      {
+        "year_month": "2026-05",
+        "total_days": 1027,
+        "rolling_3m": 1032.3333333333333
+      },
+      {
+        "year_month": "2026-06",
+        "total_days": 1031,
+        "rolling_3m": 1029.6666666666667
+      },
+      {
+        "year_month": "2026-07",
+        "total_days": 1035,
+        "rolling_3m": 1031.0
+      },
+      {
+        "year_month": "2026-08",
+        "total_days": 1026,
+        "rolling_3m": 1030.6666666666667
+      },
+      {
+        "year_month": "2026-09",
+        "total_days": 1041,
+        "rolling_3m": 1034.0
+      }
+    ],
+    "weekday_pattern": {
+      "Friday": 2066,
+      "Monday": 2045,
+      "Saturday": 3083,
+      "Sunday": 3077,
+      "Thursday": 2048,
+      "Tuesday": 3092,
+      "Wednesday": 3094
+    },
+    "total_records": 18505
+  },
+  "takeaways": [
+    "Attendance by month stable, check December drop",
+    "Weekday pattern shows lower on Monday/Friday",
+    "Department comparison shows highest/lowest staffing needs"
+  ]
+}
