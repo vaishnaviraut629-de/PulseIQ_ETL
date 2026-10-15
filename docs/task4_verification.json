@@ -1,0 +1,9 @@
+{
+  "month_trend": 18,
+  "dept_file_exists": false,
+  "dashboard_exists": true,
+  "insight_exists": true,
+  "chart_exists": true,
+  "anomaly_rows": 5,
+  "december_check": "Data is Apr-Aug 2025 only, so Dec drop cannot be verified - likely fake data artifact. To check: need 2+ years data, do statsmodels seasonal_decompose, compare year-over-year Dec vs Nov, check HR leave policy logs."
+}
