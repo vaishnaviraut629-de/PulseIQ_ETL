@@ -1,0 +1,39 @@
+services:
+  db:
+    image: postgres:15
+    container_name: pulseiq_db
+    environment:
+      POSTGRES_USER: pulsiq
+      POSTGRES_PASSWORD: pulsiq123
+      POSTGRES_DB: warehouse
+    ports:
+      - "5432:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+      - ./sql:/docker-entrypoint-initdb.d
+    restart: always
+
+  etl:
+    build: .
+    container_name: pulseiq_etl
+    depends_on:
+      - db
+    volumes:
+      - .:/app
+
+  superset:
+    build: ./superset
+    container_name: pulseiq_superset
+    ports:
+      - "8088:8088"
+    depends_on:
+      - db
+    volumes:
+      - superset_home:/app/superset_home
+    environment:
+      - SUPERSET_SECRET_KEY=not_so_secret_for_dev_12345
+    restart: always
+
+volumes:
+  db_data:
+  superset_home:

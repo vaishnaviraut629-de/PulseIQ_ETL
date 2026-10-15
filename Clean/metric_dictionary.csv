@@ -1,0 +1,6 @@
+table,count
+dim_date,2557
+dim_employee,1606
+dim_department,11
+dim_role,58
+dim_location,9
